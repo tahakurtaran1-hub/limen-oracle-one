@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#faf9f5">
+  <meta name="description" content="Meet Oracle One, an ambient instrument by Limen. Explore its optical core, listen to the field recordings, and follow a prediction to its source.">
+  <title>Limen — Oracle One</title>
+  <link rel="icon" href="assets/limen.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/instrument-regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="assets/instrument-italic.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="assets/oracle-one.webp" as="image">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="casebook.css">
+  <link rel="stylesheet" href="investigation.css">
+  <link rel="stylesheet" href="vigil.css">
+  <link rel="stylesheet" href="secrets.css">
+  <script src="experience.js" defer></script>
+  <script src="dispositions.js" defer></script>
+  <script src="casebook.js" defer></script>
+  <script src="investigation.js" defer></script>
+  <script src="vigil.js" defer></script>
+  <script src="secrets.js" defer></script>
+</head>
+<body>
+  <svg class="symbols" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <defs>
+      <g id="limen-mark" fill="none" stroke="currentColor" stroke-width="1.65">
+        <ellipse cx="20" cy="20" rx="7.2" ry="17.2"/>
+        <ellipse cx="20" cy="20" rx="7.2" ry="17.2" transform="rotate(30 20 20)"/>
+        <ellipse cx="20" cy="20" rx="7.2" ry="17.2" transform="rotate(60 20 20)"/>
+        <ellipse cx="20" cy="20" rx="7.2" ry="17.2" transform="rotate(90 20 20)"/>
+        <ellipse cx="20" cy="20" rx="7.2" ry="17.2" transform="rotate(120 20 20)"/>
+        <ellipse cx="20" cy="20" rx="7.2" ry="17.2" transform="rotate(150 20 20)"/>
+      </g>
+      <g id="play-mark"><path d="M7 4.5 16 10l-9 5.5z" fill="currentColor"/></g>
+      <g id="sound-mark" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round"><path d="M3 9v6m4-10v14m4-11v8m4-13v18m4-13v8m4-7v6"/></g>
+      <g id="cross-mark" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="m6 6 12 12M18 6 6 18"/></g>
+    </defs>
+  </svg>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="mast">
+    <div class="mast-inner">
+      <a class="brand" href="#top" aria-label="Limen home"><svg viewBox="0 0 40 40"><use href="#limen-mark"/></svg><span>Limen</span></a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#instrument">The instrument</a><a href="#technology">Technology</a><a href="#field-notes">Field notes</a>
+      </nav>
+      <div class="mast-actions">
+        <button class="sound-toggle icon-button" type="button" data-sound aria-label="Turn sound on" aria-pressed="false" title="Turn sound on"><svg viewBox="0 0 26 24"><use href="#sound-mark"/></svg></button>
+        <span class="mast-divider"></span>
+        <button class="pill mast-cta" type="button" data-open-session>Begin session</button>
+        <button class="pill case-toggle" type="button" data-casebook hidden>Casebook</button>
+        <button class="menu-toggle icon-button" type="button" aria-expanded="false" aria-label="Open navigation" aria-controls="mobile-nav"><span></span><span></span></button>
+      </div>
+    </div>
+    <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile navigation" hidden><a href="#instrument">The instrument</a><a href="#technology">Technology</a><a href="#field-notes">Field notes</a></nav>
+    <div class="reading-progress" aria-hidden="true"></div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <img class="hero-image" src="assets/oracle-one.webp" width="1983" height="793" alt="Oracle One, a polished amber optical sphere resting on a fluted bronze plinth in warm daylight." fetchpriority="high">
+      <div class="hero-wash"></div>
+      <div class="hero-copy">
+        <p class="eyebrow intro-label"><span class="small-rule"></span>Introducing Oracle One</p>
+        <h1 id="hero-title">A sense of<br><em>what’s next.</em></h1>
+        <p class="hero-description">An ambient intelligence that reads the rhythms of a room and anticipates what comes next.</p>
+        <div class="hero-actions">
+          <a class="pill primary" href="#instrument">Explore the instrument</a>
+          <button class="film-trigger" type="button" data-open-film><span class="play-disc"><svg viewBox="0 0 20 20"><use href="#play-mark"/></svg></span>Watch film</button>
+        </div>
+      </div>
+      <div class="hero-foot">
+        <a class="scroll-cue" href="#instrument"><span class="scroll-track" aria-hidden="true"></span>Scroll to discover</a>
+        <span class="plate-id"><span class="target-mark" aria-hidden="true"></span>O–1 &nbsp;/&nbsp; SMOKED AMBER</span>
+      </div>
+    </section>
+
+    <div class="spec-belt" aria-label="Instrument at a glance">
+      <div class="spec"><svg viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><circle cx="22" cy="22" r="15.5"/><ellipse cx="22" cy="22" rx="8.5" ry="15.5" transform="rotate(38 22 22)"/><ellipse cx="22" cy="22" rx="4" ry="15.5" transform="rotate(38 22 22)"/><path d="m6 32 32-20"/></svg><div><strong>Optical core</strong><span>Cast from solid glass</span></div></div>
+      <div class="spec"><svg viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" aria-hidden="true"><path d="M3 20v4m4-8v12m4-17v22m4-17v12m4-22v32m4-28v24m4-20v16m4-23v30m4-22v14m4-10v6"/></svg><div><strong>Ambient sensing</strong><span>Tuned to your surroundings</span></div></div>
+      <div class="spec"><svg viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linejoin="round" aria-hidden="true"><path d="m22 5 16 8.5-16 8.7-16-8.7zM6 21l16 8.7L38 21M6 28.5l16 8.7 16-8.7"/><path d="m11 18 3-1.5m16 0 3 1.5m-22 7.5 3-1.5m16 0 3 1.5"/></svg><div><strong>Local inference</strong><span>Processed entirely on-device</span></div></div>
+    </div>
+
+    <section id="instrument" class="instrument paper" aria-labelledby="instrument-title">
+      <div class="section-wrap instrument-layout">
+        <div class="instrument-copy">
+          <p class="eyebrow"><span class="small-rule"></span>The instrument</p>
+          <h2 id="instrument-title">A different way<br>to <em>read a room.</em></h2>
+          <p class="section-description">A quiet object with three working layers. Together, they turn changes in the room into a forecast you can see.</p>
+          <div class="layer-controls" role="group" aria-label="Explore instrument layers">
+            <button type="button" class="layer-choice selected" data-layer="optics" aria-pressed="true">Optics</button>
+            <button type="button" class="layer-choice" data-layer="sensing" aria-pressed="false">Sensing</button>
+            <button type="button" class="layer-choice" data-layer="inference" aria-pressed="false">Inference</button>
+          </div>
+          <p id="layer-description" class="layer-description" aria-live="polite">A cast glass sphere folds the indicator light into a single floating horizon. Its position gives each forecast a visible form.</p>
+        </div>
+        <figure class="drawing-plate">
+          <div class="plate-top"><span class="mono">O–1 / SECTION VIEW</span><span class="target-mark" aria-hidden="true"></span></div>
+          <canvas id="section-drawing" role="img" aria-label="Technical section drawing of the optical sphere and its pedestal"></canvas>
+          <figcaption><span class="plate-key"><i></i><span id="layer-name">Optical core</span></span><span class="mono" id="layer-material">AMBER GLASS</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="technology" id="technology" aria-labelledby="technology-title">
+      <div class="section-wrap">
+        <p class="eyebrow"><span class="small-rule"></span>The technology</p>
+        <div class="tech-heading"><h2 id="technology-title">Five seconds <em>ahead.</em></h2><p>Listen to a reference strike from our test room. The upper trace is Oracle’s forecast. The lower trace is the room recording.</p></div>
+        <div class="scope">
+          <div class="scope-top"><span class="scope-label"><i class="led"></i>Listening room</span><span class="mono" id="scope-source">REFERENCE / BRASS</span></div>
+          <div class="scope-screen">
+            <div class="scope-labels mono"><span>FORECAST</span><span>ROOM MIC</span></div>
+            <canvas id="scope-drawing" aria-label="Two matching waveforms separated by five seconds" role="img"></canvas>
+          </div>
+          <div class="scope-controls">
+            <button type="button" class="scope-play" aria-label="Play reference recording" id="scope-play"><span class="play-disc"><svg viewBox="0 0 20 20"><use href="#play-mark"/></svg></span><span id="scope-play-label">Play recording</span></button>
+            <input id="scope-seek" type="range" min="0" max="12" step="0.01" value="0" aria-label="Recording position in seconds">
+            <output id="scope-clock" class="mono">00:00 / 00:12</output>
+          </div>
+        </div>
+        <div class="scope-foot"><span>The factory reference can be changed for this session.</span><button class="text-button" type="button" data-open-session>Set reference tone</button></div>
+      </div>
+    </section>
+
+    <section id="field-notes" class="field-notes" aria-labelledby="notes-title">
+      <div class="section-wrap notes-layout">
+        <div class="notes-intro"><p class="eyebrow"><span class="small-rule"></span>Field notes</p><h2 id="notes-title">From the<br><em>listening room.</em></h2><p>Extracts from the overnight log.<br>Test chamber B, west annex.</p><span class="log-reel mono"><span class="reel-icon" aria-hidden="true"></span>REEL B / 04</span></div>
+        <div class="log-pages">
+          <article class="log-entry"><p class="mono log-time"><i></i>02:17:00 &nbsp;/&nbsp; BASELINE</p><h3>An empty room.</h3><p>Before the second trial we took the brass bell out. The chamber inventory now reads one table, one microphone, one Oracle.</p></article>
+          <article class="log-entry"><p class="mono log-time"><i></i>02:17:05 &nbsp;/&nbsp; RETURN SIGNAL</p><h3>The bell rang anyway.</h3><p>Even the scrape of a thumbnail against the rim was there. We laid tonight’s recording over yesterday’s. The two scratches cancelled perfectly.</p></article>
+          <article class="log-entry altered"><p class="mono log-time"><i></i>02:17:05 &nbsp;/&nbsp; AMENDMENT</p><h3>Both leads went to <em>output.</em></h3><p>The room channel had been recording the forecast. When we repaired the cable, accuracy fell. By morning someone had put it back.</p><div class="pencil-note">whose handwriting is this</div></article>
+          <article class="log-entry filed-entry" id="filed-record" hidden><p class="mono log-time"><i></i><span id="filed-stamp"></span></p><h3 id="filed-title"></h3><p id="filed-copy"></p><div class="pencil-note" id="filed-margin"></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="night-access" class="night-access" aria-labelledby="access-title">
+      <div class="access-photo"><img src="assets/west-annex.webp" loading="lazy" alt="Empty laboratory corridor leading to an amber-lit observation room."><div class="access-copy"><p class="eyebrow"><span class="small-rule"></span>After visiting hours</p><h2 id="access-title">Take the<br><em>night shift.</em></h2><p>The porter keeps three envelopes under the counter. Take one. The person who left it will receive your report in the morning.</p></div><span class="access-sign mono">WEST ANNEX &nbsp; / &nbsp; STAFF ENTRANCE</span></div>
+      <div class="access-desk section-wrap">
+        <div class="access-heading"><h3>Incoming correspondence</h3><button type="button" class="text-button" data-casebook>Open casebook</button></div>
+        <div id="pass-rack" class="pass-rack" role="group" aria-label="Choose a correspondent"></div>
+        <article class="dispatch" id="dispatch" hidden><div class="mono" id="dispatch-date"></div><div><h3 id="dispatch-title"></h3><p id="dispatch-body"></p><p class="dispatch-sign" id="dispatch-sign"></p><a class="case-link" id="dispatch-route" href="#night-access">Follow the lead</a></div></article>
+      </div>
+    </section>
+    <section id="recursion" class="recursion" aria-label="The feedback chamber">
+      <div class="chamber">
+        <div class="chamber-texture"></div>
+        <div class="chamber-visual" aria-hidden="true"><img src="assets/witness.webp" alt="" width="1254" height="1254" class="chamber-face" loading="lazy"><canvas id="orbits"></canvas></div>
+        <div class="broken-promise" aria-hidden="true"><span>A sense of what’s n</span><span>what’s next what’s next what’s</span></div>
+        <div class="echo-field" id="echo-field" aria-hidden="true"></div>
+        <div class="chamber-inner">
+          <p class="chamber-channel mono"><span></span><b id="channel-label">OPEN CIRCUIT</b></p>
+          <div class="chamber-copy">
+            <p class="eyebrow" id="cycle-label">Salt / the residue</p>
+            <h2 id="cycle-title">A thing leaves<br><em>a mark.</em></h2>
+            <p id="cycle-body">Grind a bell to powder. Sift out the ringing. At the bottom of the sieve is a little slip of paper with the word bell on it.</p>
+          </div>
+          <div class="chamber-foot"><span class="mono" id="cycle-readout">SOURCE / ROOM</span><div class="cycle-meter" aria-hidden="true"><i></i><i></i><i></i><i></i></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="witness" class="witness" aria-labelledby="witness-title">
+      <div class="witness-art" aria-hidden="true"><img src="assets/witness.webp" alt="" width="1254" height="1254" loading="lazy"><canvas id="witness-tear"></canvas><div class="scan-lines"></div></div>
+      <div class="witness-scripts mono" aria-hidden="true"><span>THE COPY TESTIFIED FOR THE COPY</span><span>as written / so heard / as written</span><span>the witness field is empty</span></div>
+      <div class="carbon-roll" aria-hidden="true"><div class="carbon-lines" id="carbon-lines"></div></div>
+      <div class="witness-content">
+        <p class="eyebrow"><span class="small-rule"></span>The last observation</p>
+        <h2 id="witness-title">Please.<br><em>Make me right.</em></h2>
+        <p id="witness-copy">I have written down what happens next. One little sound and I can file this under things that happened to me.</p>
+        <div class="prediction"><span class="mono">SEALED FORECAST</span><strong id="forecast-text">A brass bell will ring.</strong></div>
+        <div class="witness-actions" id="witness-choices">
+          <button type="button" class="pill strike" id="strike">Strike the bell</button>
+          <button type="button" class="silence" id="silence">Keep the room silent</button>
+        </div>
+        <details class="dispositions" id="dispositions" hidden><summary>Enter evidence into the record <span id="disposition-count"></span></summary><div id="disposition-options"></div></details>
+        <div class="outcome" id="outcome" tabindex="-1" hidden><span id="outcome-tag" class="mono"></span><p id="outcome-text"></p><a class="filed-link" href="#morning-copy">Read the morning copy</a> <a class="filed-link" href="#filed-record">Read the filed record</a></div>
+      </div>
+    </section>
+    <section id="morning-copy" class="morning-copy" hidden aria-labelledby="morning-title"><div class="section-wrap morning-layout"><aside><p class="eyebrow"><span class="small-rule"></span>Morning dispatch</p><div id="morning-time" class="morning-time"></div><button type="button" data-casebook class="text-button">Open casebook</button></aside><article class="morning-letter"><p id="morning-recipient" class="mono"></p><h2 id="morning-title"></h2><div id="morning-body"></div><div id="morning-reply"></div><div class="morning-tools"><button class="text-button" id="reopen" type="button">Reopen the decision</button><button class="text-button" id="save-report" type="button">Save this record</button></div></article></div></section>
+  </main>
+  <footer class="footer"><a class="brand" href="#top" aria-label="Limen home"><svg viewBox="0 0 40 40"><use href="#limen-mark"/></svg><span>Limen</span></a><button class="return-button" type="button" id="restart">Start a fresh night</button><span class="mono">END OF TRANSMISSION</span></footer>
+
+  <dialog class="session-dialog" id="session-dialog" aria-labelledby="session-title">
+    <div class="dialog-bar"><span class="dialog-brand"><svg viewBox="0 0 40 40"><use href="#limen-mark"/></svg>Limen</span><button class="icon-button dialog-close" type="button" aria-label="Close session setup"><svg viewBox="0 0 24 24"><use href="#cross-mark"/></svg></button></div>
+    <div class="session-body">
+      <p class="eyebrow"><span class="small-rule"></span>Session calibration</p>
+      <h2 id="session-title">Leave a sound<br><em>in the room.</em></h2>
+      <p>Choose a reference for Oracle to listen for during this visit.</p>
+      <div class="tone-options" role="group" aria-label="Reference material">
+        <button type="button" data-tone="brass" aria-pressed="true"><svg viewBox="0 0 56 42" aria-hidden="true"><path d="M14 29c3-3 4-6 4-12 0-6 4-10 10-10s10 4 10 10c0 6 1 9 4 12M13 30q15 7 30 0M25 35q3 5 6 0M26 7V5h4v2"/></svg><span>Brass</span></button>
+        <button type="button" data-tone="glass" aria-pressed="false"><svg viewBox="0 0 56 42" aria-hidden="true"><path d="M19 8h18l2 11c.4 6-4 9-11 9s-11.4-3-11-9zM28 28v8m-7 1h14M21 12l-1 8"/></svg><span>Glass</span></button>
+        <button type="button" data-tone="stone" aria-pressed="false"><svg viewBox="0 0 56 42" aria-hidden="true"><path d="m8 25 10-13 16-4 13 14-9 10-18 3zM8 25l17-1 9-16m-9 16 13 8m-13-8-5 11"/></svg><span>Stone</span></button>
+      </div>
+      <div class="calibration-feedback"><span class="trace-glyph" aria-hidden="true">∿</span><span id="tone-detail" aria-live="polite">A slow, warm decay.</span></div>
+      <button class="pill primary set-tone" type="button" id="set-tone">Set reference</button>
+    </div>
+  </dialog>
+  <dialog class="film-dialog" id="film-dialog" aria-labelledby="film-title">
+    <div class="dialog-bar"><span class="mono" id="film-title">LIMEN / ORACLE ONE — PRODUCT FILM</span><button class="icon-button dialog-close" type="button" aria-label="Close film"><svg viewBox="0 0 24 24"><use href="#cross-mark"/></svg></button></div>
+    <video id="film" controls playsinline muted preload="none" poster="assets/oracle-one.webp" aria-label="Oracle One product film with on-screen captions"><source src="assets/oracle-film.mp4" type="video/mp4"></video>
+  </dialog>
+  <dialog class="casebook-dialog" id="casebook-dialog" aria-labelledby="casebook-title">
+    <div class="dialog-bar"><span class="mono">LIMEN / INTERNAL CIRCULATION</span><button class="icon-button dialog-close" type="button" aria-label="Close casebook"><svg viewBox="0 0 24 24"><use href="#cross-mark"/></svg></button></div>
+    <div class="casebook-body"><p class="eyebrow"><span class="small-rule"></span>Personal copy</p><h2 id="casebook-title">Night <em>casebook.</em></h2><p id="case-status"></p>
+    <div class="case-tabs" role="group" aria-label="Casebook contents"><button type="button" data-leaf="places" aria-pressed="true">Places</button><button type="button" data-leaf="evidence" aria-pressed="false">Evidence</button><button type="button" data-leaf="endings" aria-pressed="false">Endings</button></div>
+    <div id="case-leaf"></div><details class="case-hint"><summary>Consult a marginal note</summary><p id="case-hint-text"></p><button id="case-next-hint" type="button" class="text-button">Turn the page</button></details></div>
+  </dialog>
+  <div class="toast" id="toast" role="status"></div>
+</body>
+</html>

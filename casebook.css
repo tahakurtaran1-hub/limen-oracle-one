@@ -1,0 +1,68 @@
+.case-toggle{min-height:40px;padding:0 22px;background:#34372a;color:#faf7ed;font-size:13px}
+body.deep .case-toggle{background:#ddd3b9;color:#20221a}
+.night-access{background:#e9e5d9;color:#2c3027}
+.access-photo{position:relative;min-height:520px;display:flex;align-items:center;isolation:isolate;overflow:hidden;background:#101611;color:#f4eedc}
+.access-photo>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:65% center;z-index:-2}
+.access-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#0b100ce3 0%,#1016127a 39%,transparent 76%);z-index:-1}
+.access-copy{padding:72px var(--gutter);max-width:740px}
+.access-copy .eyebrow{color:#d8cda9}
+.access-copy h2{font-size:clamp(76px,7vw,130px)}
+.access-copy>p:last-child{margin:24px 0 0;max-width:360px;line-height:1.6;color:#e1ddcc;font-size:17px}
+.access-sign{position:absolute;bottom:19px;right:var(--gutter);color:#dbd3bc;text-shadow:0 1px 4px #141911}
+.access-desk{padding-top:48px;padding-bottom:58px}
+.access-heading{display:flex;align-items:center;justify-content:space-between;gap:20px;margin-bottom:23px}
+.access-heading h3,.dispatch h3{font-size:clamp(32px,3.2vw,54px);letter-spacing:-.035em;line-height:1.05}
+.pass-rack{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.envelope{position:relative;padding:25px;text-align:left;border:1px solid #c3ba9f;background:linear-gradient(155deg,#f9f4e6,#eae2c9);box-shadow:0 3px 0 #8a79551c;display:flex;flex-direction:column;align-items:flex-start;justify-content:space-between;gap:9px;min-height:148px;overflow:hidden}
+.envelope::after{content:"";position:absolute;right:12px;top:13px;width:22px;height:25px;border:1px dashed #867b5999;background:repeating-linear-gradient(43deg,transparent 0 3px,#aea37c42 3px 4px)}
+.envelope[aria-pressed="true"]{border-color:#766d4d;background:linear-gradient(155deg,#e9dcb8,#dbcea9);box-shadow:inset 3px 0 #877448}
+.envelope:hover{border-color:#7d785f}
+.envelope strong{font:400 clamp(27px,2.6vw,45px)/1.12 var(--serif)}
+.envelope .mono,.dispatch .mono{font-size:11.5px;color:#635c48}
+.envelope small{color:#69634f;font-size:13px}
+.dispatch{margin:25px auto 0;padding:27px 0 0;border-top:1px solid #b7b29d;display:grid;grid-template-columns:minmax(100px,.28fr) 1fr;gap:24px}
+.dispatch>div:last-child{max-width:740px}.dispatch h3{margin-bottom:12px}
+.dispatch p{line-height:1.68;max-width:680px}.dispatch .dispatch-sign{margin:14px 0;font:italic 24px/1.25 var(--serif)}
+.case-link,.case-place:hover span{text-decoration:underline;text-underline-offset:4px}
+.case-link{display:inline-block;font-size:14px;font-weight:540}
+.casebook-dialog{width:min(560px,calc(100% - 28px));background:#f7f4e9;border:1px solid #c9c2ad;border-radius:3px}
+.casebook-body{padding:26px clamp(18px,4vw,40px) 28px}
+.casebook-body h2{font-size:58px}.casebook-body .eyebrow{margin:0 0 12px}
+#case-status{margin-top:12px;color:#6c6758;font-size:14px}
+.case-tabs{display:flex;margin-top:20px;border-bottom:1px solid #c5bdab;gap:17px}
+.case-tabs button{padding:8px 0;font-size:15px}.case-tabs [aria-pressed="true"]{border-bottom:2px solid #373729;font-weight:600}
+#case-leaf{min-height:200px;padding:12px 0}
+.case-place{display:flex;justify-content:space-between;align-items:baseline;gap:8px;padding:7px 0;border-bottom:1px solid #ded8c7}
+.case-place small{color:#74643e;font-size:10px}.case-place+button{margin:10px 0 0}
+.resume-place{display:block;padding:10px 13px;margin-bottom:7px;background:#e5ddc8;color:#48452f;font-size:14px;font-weight:550}
+.evidence-slip summary{cursor:pointer;font-weight:550}
+.empty-leaf{padding:8px 0 15px;font-size:15px;color:#635e4d}
+.evidence-slip{padding:8px 0;border-bottom:1px solid #d4ccba}.evidence-slip strong{font-size:16px;font-weight:570}.evidence-slip p{font-size:14px;color:#635b4a;margin-top:2px}
+.case-hint{border-top:1px solid #bbb29b;padding:13px 0 0;font-size:14px}.case-hint summary,.dispositions summary{cursor:pointer}
+.case-hint p{margin:12px 0 6px;color:#605b49}
+.dispositions{margin-top:22px;max-width:455px;color:#c9bca6}
+.dispositions summary{padding:11px 0;border-block:1px solid #62533f;font-size:14px}
+#disposition-count{font:12px var(--mono);margin-left:8px;color:#d1b282}
+#disposition-options{display:grid;gap:1px;margin:6px 0;padding-bottom:5px}
+.verdict-action{padding:10px 6px;text-align:left;border-bottom:1px solid #423b2f;color:inherit}
+.verdict-action strong,.verdict-action small{display:block}.verdict-action strong{font-size:15px;font-weight:510}.verdict-action small{font:12px/1.5 var(--mono);color:#a0967f;margin-top:3px}.verdict-action:hover{background:#c8a76b13;color:#f0dfb8}
+.outcome .filed-link+.filed-link{margin-left:14px}
+.morning-copy{color:#39382c;background:#e1decb;padding:clamp(64px,8vw,135px) 0}
+.morning-layout{display:grid;grid-template-columns:minmax(180px,.5fr) minmax(0,1.3fr);gap:clamp(35px,7vw,120px)}
+.morning-time{font:clamp(55px,6vw,95px)/1 var(--serif);letter-spacing:-.05em;color:#69694e;margin:12px 0 26px}
+.morning-letter{border-top:2px solid #7a795d;padding-top:15px;max-width:788px}
+.morning-letter h2{margin:22px 0;font-size:clamp(52px,5vw,90px)}
+#morning-body p{font:clamp(22px,2vw,33px)/1.35 var(--serif);margin-top:15px;max-width:680px}
+#morning-reply:not(:empty){border:1px dashed #a19b82;margin:24px 0 0;padding:17px;transform:rotate(-.5deg);background:#efecd9}
+#morning-reply p{margin-top:8px;line-height:1.55}
+.morning-tools{display:flex;align-items:flex-start;gap:18px;flex-wrap:wrap;margin-top:27px}
+@media(max-width:760px){
+  .case-toggle{min-height:36px;padding:0 15px;font-size:12px}
+  .access-photo{min-height:415px}.access-copy{padding:54px var(--gutter)}.access-copy h2{font-size:75px}.access-copy>p:last-child{max-width:295px;font-size:16px}
+  .access-sign{font-size:10px}.access-desk{padding-block:37px}
+  .access-heading{align-items:flex-start}.access-heading h3{font-size:31px;max-width:200px}.access-heading button{white-space:nowrap}
+  .pass-rack{grid-template-columns:minmax(0,1fr);gap:8px}.envelope{min-height:0;gap:3px;padding:15px 20px}
+  .envelope strong{font-size:29px}.dispatch,.morning-layout{grid-template-columns:minmax(0,1fr);gap:14px}
+  .morning-layout aside{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}.morning-layout .eyebrow{width:100%;margin-bottom:3px}
+  .morning-time{font-size:40px;margin:0 0 5px}.casebook-body h2{font-size:49px}
+}
